@@ -1,8 +1,11 @@
+import { useState } from "react";
 import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
 import MessageForm from "./MessageForm";
+import avatar from "../resources/avatar.png";
 
 const ChatFeed = (props) => {
+  console.log(props);
   const { chats, activeChat, userName, messages } = props;
   const chat = chats && chats[activeChat];
 
@@ -15,8 +18,9 @@ const ChatFeed = (props) => {
             className="read-receipt"
             style={{
               float: isMyMessage ? "right" : "left",
-              backgroundImage:
-                person.person.avatar && `url(${person.person.avatar})`,
+              backgroundImage: person.person.avatar
+                ? `url(${person.person.avatar})`
+                : avatar,
             }}
           />
         )

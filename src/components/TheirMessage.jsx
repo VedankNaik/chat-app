@@ -1,3 +1,5 @@
+import avatar from "../resources/avatar.png";
+
 const TheirMessage = ({ lastMessage, message }) => {
   const isFirstMessageByUser =
     !lastMessage || lastMessage.sender.username !== message.sender.username;
@@ -8,7 +10,9 @@ const TheirMessage = ({ lastMessage, message }) => {
         <div
           className="message-avatar"
           style={{
-            backgroundImage: message.sender && `url(${message.sender.avatar})`,
+            backgroundImage: message.sender.avatar
+              ? `url(${message.sender.avatar})`
+              : avatar,
           }}
         />
       )}
