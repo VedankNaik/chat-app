@@ -23,6 +23,7 @@ Open http://localhost:3000 to view it in your browser.
 ```
 
 ## Demo
+Vist [ChatApp](https://chat-app-liard-six.vercel.app/)
 (New user registration not added yet)
 Demo users:
 * Username - Ved, Password - qwerty1234
