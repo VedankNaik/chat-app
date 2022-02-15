@@ -3,7 +3,7 @@ import ChatFeed from "./components/ChatFeed";
 import LoginForm from "./components/LoginForm";
 import "./App.css";
 
-const projectID = "3ac5d5a5-73d4-4a63-88e0-17a73409da6c";
+const projectID = process.env.REACT_APP_PROJECT_ID;
 
 const App = () => {
   if (!localStorage.getItem("username")) return <LoginForm />;

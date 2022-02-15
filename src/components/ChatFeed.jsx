@@ -1,11 +1,9 @@
-import { useState } from "react";
 import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
 import MessageForm from "./MessageForm";
 import avatar from "../resources/avatar.png";
 
 const ChatFeed = (props) => {
-  console.log(props);
   const { chats, activeChat, userName, messages } = props;
   const chat = chats && chats[activeChat];
 

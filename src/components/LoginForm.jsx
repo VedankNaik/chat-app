@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const projectID = "3ac5d5a5-73d4-4a63-88e0-17a73409da6c";
+const projectID = process.env.REACT_APP_PROJECT_ID;
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -24,7 +24,6 @@ const LoginForm = () => {
 
       localStorage.setItem("username", username);
       localStorage.setItem("password", password);
-
       window.location.reload();
       setError("");
     } catch (err) {
@@ -35,7 +34,7 @@ const LoginForm = () => {
   return (
     <div className="wrapper">
       <div className="form">
-        <h1 className="title">Chat Application</h1>
+        <h1 className="title">ChatApp</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -59,7 +58,7 @@ const LoginForm = () => {
             </button>
           </div>
         </form>
-        <h1>{error}</h1>
+        <h1 className="error">{error}</h1>
       </div>
     </div>
   );
