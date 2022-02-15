@@ -15,12 +15,11 @@ Project is created with:
 	
 ## Setup
 To run this project locally:
-
 ```
 $ npm install
 $ npm start
-Open http://localhost:3000 to view it in your browser.
 ```
+Open http://localhost:3000 to view it in your browser.
 
 ## Demo
 Vist [ChatApp](https://chat-app-liard-six.vercel.app/)
