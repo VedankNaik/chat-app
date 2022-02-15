@@ -25,6 +25,6 @@ Open http://localhost:3000 to view it in your browser.
 ## Demo
 (New user registration not added yet)
 Demo users:
-    * Username - Ved, Password - qwerty1234
-    * Username - Joy, Password - qwerty1234
+* Username - Ved, Password - qwerty1234
+* Username - Joy, Password - qwerty1234
 
